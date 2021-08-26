@@ -1,4 +1,4 @@
-FROM node:10 as builder
+FROM node:10-alpine as builder
 ENV HTTP_PROXY="http://10.31.255.65:8080"
 ENV HTTPS_PROXY="http://10.31.255.65:8080"
 WORKDIR '/app'
